@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <li>
         <form action="signup.php" method="post">
           <label for="mailid2">mail</label><br/>
-          <input type="text" id="mailid2" name="email2" placeholder="enter your email"/><br/>
+          <input type="text" id="mailid2" name="email2" placeholder=""/><br/>
           <label for="userid2">username</label><br/>
           <input id="userid2" type="text" name="username2" value=""><br/>
           <label for="pwdid2">password</label><br/>

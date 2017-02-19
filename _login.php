@@ -1,42 +1,43 @@
 
 <style >
-  body{
-    background-color: lightblue;
-  }
-  form {
-    font-family: monospace;
-    font-size: 15px;
-    border-radius: 5px 50px;
-    background-color: royalblue;
-    z-index: 1;
-  }
-  ul li {
-    list-style-type: none;
-  }
-  input{
-    width: 100px;
-    height:50px;
-    margin: 10px;
-    border: 2px solid purple;
-    border-radius: 2px 10px;
-    text-align: center;
-  }
+body{
+  background-color: lightblue;
+}
+
+form {
+  font-family: monospace;
+  font-size: 15px;
+  border-radius: 5px 50px;
+  background-color: royalblue;
+  z-index: 1;
+  color: white;
+}
+ul li {
+  list-style-type: none;
+}
+input{
+  width: 120px;
+  height:60px;
+  margin: 10px;
+  border: 2px solid purple;
+  border-radius: 2px 10px;
+  text-align: center;
+}
 </style>
 
- <?php
-  $users = require("_db.php");
-  if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email =isset($_POST["mail"]) ? $_POST["mail"] : "";
-    $username = isset($_POST["username"]) ? $_POST["username"] : "";
-    $password = isset($_POST["password"]) ? $_POST["password"] : "";
-    if (isset($users[$username]) && $users[$username] && $email[$username] == $password) {
-      $_SESSION["username"] = $username;
-      require_once ("game.php");
-    }
-
+<?php
+$users = require("_db.php");
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $email =isset($_POST["mail"]) ? $_POST["mail"] : "";
+  $username = isset($_POST["username"]) ? $_POST["username"] : "";
+  $password = isset($_POST["password"]) ? $_POST["password"] : "";
+  if (isset($users[$username]) && $users[$username] && $email[$username] == $password) {
+    $_SESSION["username"] = $username;
+    return ("game.php");
   }
-  ?>
- <nav id="navlog">
+}
+?>
+<nav id="navlog">
   <ul>
     <li>
       <form action="_login.php" method="post">
