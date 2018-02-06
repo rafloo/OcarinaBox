@@ -1,0 +1,140 @@
+.titre {
+  font-family: monospace;
+  font-size: 70px;
+  margin-left: 150px;
+  margin-right: 150px;
+  text-align: center;
+  color: red;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+body {
+  /*background-color: #007600;*/
+  background-image: url("../image/zelda1.jpg");
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+.padV{
+  width : 660px ;
+  height: 70px ;
+  display: inline-block;
+  margin-top: 40px;
+  margin-left: 250px;
+  background-color: #165A11;
+  border: .5em groove lightgreen;
+  padding: 0;
+  font-family: monospace;
+  /*box-shadow: 2px 1px #454D48;*/
+  font-size: 1.5rem;
+  transition: all .07s ease;
+  text-align: center;
+  color:#ffc600;
+  text-shadow: 0 0 .5rem black;
+}
+
+.padA{
+  width : 125px ;
+  height: 100px ;
+  display: inline-block;
+  margin: 3px;
+  padding: 0;
+  font-family: monospace;
+  background-color: #578435;
+  border: .4em groove lightgreen;
+  /*box-shadow: 2px 1px #454D48;*/
+  font-size: 1.5rem;
+  transition: all .07s ease;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 .5rem black;
+}
+.padB{
+  width : 125px ;
+  height: 100px ;
+  display: inline-block;
+  margin: 3px;
+  padding: 0;
+  font-family: monospace;
+  background-color: #578435;
+  border: .4em groove lightgreen;
+  /*box-shadow: 2px 1px #454D48;*/
+  font-size: 1.5rem;
+  transition: all .07s ease;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 .5rem black;
+}
+.padC{
+  width : 125px ;
+  height: 100px ;
+  display: inline-block;
+  margin: 3px;
+  padding: 0;
+  font-family: monospace;
+  background-color: #578435;
+  border: .4em groove lightgreen;
+  /*box-shadow: 2px 1px #454D48;*/
+  font-size: 1.5rem;
+  transition: all .07s ease;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 .5rem black;
+}
+.padD{
+  width : 125px ;
+  height: 100px ;
+  display: inline-block;
+  margin: 3px;
+  padding: 0;
+  font-family: monospace;
+  background-color: #578435;
+  border: .4em groove lightgreen;
+  /*box-shadow: 2px 1px #454D48;*/
+  font-size: 1.5rem;
+  transition: all .07s ease;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 .5rem black;
+}
+.padE{
+  width : 125px ;
+  height: 100px ;
+  display: inline-block;
+  margin: 3px;
+  padding: 0;
+  font-family: monospace;
+  background-color: #578435;
+  border: .4em groove lightgreen;
+  /*box-shadow: 2px 1px #454D48;*/
+  font-size: 1.5rem;
+  transition: all .07s ease;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 .5rem black;
+}
+
+.allpad{
+  width : 660px;
+  height: 649px;
+  margin: auto;
+  background-color:#165A11;
+  text-align: center;
+  border-radius: 2em gold;
+  border: .5em groove lightgreen;
+}
